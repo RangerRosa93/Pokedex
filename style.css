@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+body{
+    text-align: center;
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, #87f1f2 41%, #0ee2e5 100%);
+    min-height: 100vh;
+}
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+.pokemon_img{
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+    height: 20%;
+}
+.pokemon_data{
+    width: 65%;
+    position: absolute;
+    font-weight: 600;
+    color: #827878;
+    top: 54.5%;
+    left: 12%;
+    font-size: clamp(8px,5vw,25px);/*min, desejavel,max*/
+    text-align: end;
+    
+}
+.pokemon_name{
+    color: #443d3d;
+    text-transform: capitalize;
+}
+.form{
+    position: absolute;
+    top: 65%;
+    width: 65%;
+    left: 13.5%;  
+}
+.input_search{
+    width: 100%;    
+    padding: 4%;
+    outline: none;/* serve pra tirar a linha azul quando 
+    seleciona o input*/
+    background-color: #e3e3e3;
+    border: 2px solid #272121;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px,5vw,1rem);/*min, desejavel,max*/
+    box-shadow:  -2px 2px 0 #727d78, -4px 4px 0 #272121;    
+}
+.buttons{
+    position: absolute;
+    bottom: 12%;
+    width: 65%;
+    left: 15%; 
+    display: flex;
+    gap: 20px;
+
+}
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #272121;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px,5vw,1rem);/*min, desejavel,max*/
+    box-shadow: -2px 2px 0 #727d78,
+                -4px 4px 0 #272121;   
+    background-color: #e3e3e3;
+    
+    
+}
+.button:active{ 
+    background: #e3e3e3;
+    box-shadow: inset -5px 5px  #818181,
+                inset 5px -5px  #ffffff;
+    font-size: 0.9rem;
+}
